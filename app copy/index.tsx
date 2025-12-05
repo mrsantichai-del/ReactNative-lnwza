@@ -5,30 +5,16 @@ export default function Index() {
   return (
     <View
       style={{
-        flex: 1,
-        flexDirection: 'column',
-        justifyContent: 'flex-start'     }}
+  flex: 1,
+  flexDirection: 'row',
+  flexWrap: 'wrap',
+}}
     >
-      <View style={{
-        justifyContent: 'center',
-        alignItems: 'center',
-        marginTop: 50,
-        marginBottom: 20,
-      }}>
       <Text>Edit app/index.tsx to edit this screen. Santichai</Text>
-      </View>
-      
-      <View >
+
       <Link href="/page2" style={styles.link}>
         <Text style={styles.linkText}>ไปหน้าที่ 2</Text>
       </Link>
-      </View>
-      <View style={{
-        flexDirection: 'row',
-        justifyContent: 'space-around',
-        alignItems: 'center',
-        flexWrap: 'wrap',
-      }}>
       <Link href="/flexbox/ex01" style={styles.link}>
         <Text style={styles.linkText}>ไปหน้า ex01</Text>
       </Link>
@@ -66,30 +52,13 @@ export default function Index() {
       <Link href="/flexbox/ex12" style={styles.link}>
         <Text style={styles.linkText}>ไปหน้า ex12</Text>
       </Link>
-      </View>
-      <View style={{flexDirection: 'row',
-        justifyContent: 'space-around',
-        alignItems: 'center',
-        flexWrap: 'wrap',
-      }}> 
-        <Link href="/test-greeting" style={styles.link}>
-                <Text style={styles.linkText}>Test Greeting</Text>
-              </Link>
-        
-              <Link href="/travel" style={styles.link}>
-                <Text style={styles.linkText}>Travel</Text>
-              </Link>
-        
-               <Link href="/resort" style={styles.link}>
-                <Text style={styles.linkText}>resort</Text>
-              </Link>
-      </View>
+      
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, justifyContent: "center", alignItems: "center", },
-  link: { margin: 10, padding: 10, backgroundColor: "#2196F3", borderRadius: 5, },
-  linkText: { color: "#fff", fontSize: 16, textAlign: "center", },
+  container: {    flex: 1,    justifyContent: "center",    alignItems: "center",  },
+  link: {    margin: 10,    padding: 10,    backgroundColor: "#2196F3",    borderRadius: 5,  },
+  linkText: {    color: "#fff",    fontSize: 16,    textAlign: "center",  },
 });
