@@ -84,6 +84,21 @@ export default function Index() {
                 <Text style={styles.linkText}>resort</Text>
               </Link>
       </View>
+      <View style={{flexDirection: 'row',
+        justifyContent: 'space-around',
+        alignItems: 'center',
+        flexWrap: 'wrap',
+      }}>
+        <Link href="/health" style={styles.link}>
+          <Text style={styles.linkText}>Health</Text>
+        </Link>
+        </View>
+
+        <Link href="/home" style={styles.link}>
+  <Text style={styles.linkText}>Home</Text>
+</Link>
+
+
     </View>
   );
 }
