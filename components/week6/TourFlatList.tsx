@@ -9,11 +9,9 @@ export default function TourFlatList(props: any) {
         { "id": "4", "title": "Tour in Portugal", "uri": "https://raw.githubusercontent.com/arc6828/myreactnative/master/assets/all/trip-4.jpg" },
         { "id": "5", "title": "Tour in Netherlands", "uri": "https://raw.githubusercontent.com/arc6828/myreactnative/master/assets/all/trip-5.jpg" }
     ];
-
-    
     return (
         <View style={props.style}>
-            <Text style={{ fontSize: 20 }}>Tour FlatList</Text>
+            <Text style={{ fontSize: 20 }}>Tour (FlatList)</Text>
             <Text style={{ color: "grey" }}>Let find out what most interesting things</Text>
             <FlatList
                 horizontal={true}
