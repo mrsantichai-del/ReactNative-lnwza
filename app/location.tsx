@@ -4,6 +4,7 @@ import { useNavigation } from "@react-navigation/native";
 import { Link } from "expo-router";
 import React, { useEffect, useState } from "react";
 import { Text, View } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function Location() {
     const [location, setLocation] = useState<any>(null);
@@ -33,7 +34,7 @@ export default function Location() {
     }, [navigation]);
     //SCREEN UI
     return (
-        <View style={{ flex: 1 }}>
+        <SafeAreaView style={{ flex: 1 }} edges={['top']}>
             {/* <Text> { JSON.stringify(location) } </Text>      */}
             <Text>{location ? new Date(location.timestamp).toString() : "-"}</Text>
             <View style={{ flexDirection: 'row', height: 70, backgroundColor: "#50E3C2" }}>
@@ -55,6 +56,6 @@ export default function Location() {
             <View style={{ flex: 1 }}>
         <MyMapView location={location} setLocation={setLocation} />
       </View>
-        </View>
+        </SafeAreaView>
     );
 }
